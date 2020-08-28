@@ -4,10 +4,10 @@
  *
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
-import React from "react"
-import PropTypes from "prop-types"
-import { Content, Footer } from "../styles/components"
-import Header from "./header"
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Content, Footer } from '../styles/components';
+import Header from './header';
 
 const Layout = ({ children }) => (
   <>
@@ -15,15 +15,15 @@ const Layout = ({ children }) => (
     <Content>
       <main>{children}</main>
       <Footer>
-        con ❤️ por
+        con <span role="img" aria-labelledby="emoji">❤️</span> por
         <a href="https://www.platzi.com">Platzi</a>
       </Footer>
     </Content>
   </>
-)
+);
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-}
+};
 
-export default Layout
+export default Layout;
